@@ -1,0 +1,51 @@
+# Django 5.1 Requirements
+# Generated: 2025-01-22
+# Python Version Required: >= 3.10
+
+# Core Framework
+asgiref>=3.7.0
+Django==5.1.4
+
+# Database
+psycopg[binary]==3.2.3  # PostgreSQL adapter (upgraded from psycopg2)
+
+# Celery & Task Queue
+celery==5.4.0
+redis==5.2.0
+
+# REST Framework
+djangorestframework==3.15.2
+django-filter==24.3
+
+# Search
+django-elasticsearch-dsl==8.0
+elasticsearch<9
+
+# PDF Processing
+pikepdf==5.6.1
+
+# Web Scraping
+playwright==1.27
+cssselect==1.1.0
+tldextract==5.1.1
+
+# Utilities
+python-dotenv==0.15.0
+polib==1.1.0
+requests<3.0
+
+# Monitoring
+sentry-sdk==2.24.1
+
+# Server
+uWSGI==2.0.19.1
+
+# Optional Development Tools (uncomment if needed)
+# django-debug-toolbar==4.4.6
+# django-extensions==3.2.3
+# ipython==8.12.0
+
+# Testing (add to separate requirements-dev.txt if needed)
+# coverage==7.6.0
+# factory-boy==3.3.0
+# faker==26.0.0
